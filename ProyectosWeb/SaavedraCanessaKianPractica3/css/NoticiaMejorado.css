@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+  }  
+  
+#caja1 {
+    background-color: rgb(245, 45, 45);
+    width: auto;
+    height: 60px;
+    font-size: 40px;
+    font-style: cooper;
+    text-align: center;
+}
+
+#caja2 {
+    text-align: left;
+
+}
+
+#caja3 {
+    font-size: 20px;
+}
+
+#barra {
+    background-color: gray;
+    width: auto;
+    font-family: 'comic sans';
+
+}
+
+img {
+    float: right;
+    margin: 1%;
+}
+
+#caja4 {
+    text-align: justify;
+}
+
+#caja5 {
+    background-color: red;
+    padding: 5px;
+    width: 190px;
+    float: right;
+    text-align: center;
+}
+    #back {
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    #back a {
+        width: 2%;
+        padding: 10px;
+        background-color: rgb(251, 95, 38);
+        border-radius: 5px;
+
+    }
+
+    #back a:link,
+    #back a:visited {
+        color: black;
+        text-decoration: none;
+        color: black;
+    }
+
+    #back a:hover {
+        background-color: rgb(157, 43, 5);
+
+    }

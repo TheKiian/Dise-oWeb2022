@@ -1,0 +1,140 @@
+*{
+    font-family: 'Franklin Gothic Medium';
+}
+
+.grid{
+    margin: 0px auto;
+    /* max-width: 1000px;
+    min-height: 100vh;  */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 100px 50px;
+    grid-template-areas: "my-header" "my-nav" "my-section" "my-aside" "my-footer ";
+    background-image: url();
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}  
+
+.image-fondo{
+   
+    background-image: url(../img/fondo-huellitas.jpg);
+}
+header{
+    grid-area: my-header;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+   
+}
+
+header div {
+    padding-top: 35px ;
+    padding-right: 250px;
+    padding-left: 250px;
+}
+.fondo{
+    background-image: url(../img/fondo.jpg);
+}
+img{
+ 
+    float:right;
+    width: 150px;
+    padding-top: 25px;
+    padding-right: 280px;
+
+}
+
+nav{
+    grid-area: my-nav;
+    background-color: rgb(74, 184, 183); 
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    
+}
+nav ul li {  
+    list-style: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+
+    
+}
+
+nav ul li a:hover{
+    background-color: rgb(74, 184, 183);
+    padding: 12px;
+}
+
+section{
+    grid-area: my-section;
+    background-color: rgb(54, 48, 169);   
+    text-align:justify; 
+    padding: 8px;
+}
+
+#caja1{
+    background-color: rgb(91, 106, 146);    
+    width: auto;
+    padding: 2px;
+}
+
+aside{
+    grid-area: my-aside;
+    background-color: rgb(74, 184, 183);  
+    color: rgb(0, 0, 0);  
+}
+
+footer{
+    grid-area: my-footer;
+    background-color: rgb(54, 48, 169);
+    text-align: center;  
+    color: rgb(0, 0, 0);  
+}
+#back {
+    text-align: center;
+    margin-top: 1%;
+}
+
+#back a {
+    width: 2%;
+    padding: 10px;
+    background-color: rgb(39, 115, 67);
+    border-radius: 5px;
+
+}
+
+#back a:link,
+#back a:visited {
+    color: black;
+    text-decoration: none;
+    color: black;
+}
+
+#back a:hover {
+    background-color: rgb(39, 204, 138);
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+    .grid{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas: "my-header my-header" "my-nav my-nav" "my-section my-aside" "my-footer my-footer ";
+
+    }
+
+}
+@media (min-width: 1001px){
+    .grid{
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: "my-header my-header my-header" "my-nav my-section my-aside" "my-footer my-footer my-footer ";
+    
+    }
+
+}
