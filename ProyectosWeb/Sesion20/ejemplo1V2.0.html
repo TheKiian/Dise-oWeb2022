@@ -1,0 +1,37 @@
+<hmtl lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"> 
+        <title>Agenda2.0</title>
+       
+    </head>
+
+    <dody onload="actualizarDatos()">
+    <div class="contenedor">
+        <header>
+            <h3>Mi agenda de contactos</h3>
+            <hr>
+        </header>
+        <form>
+            <span>Nombre:</span>
+            <input type="text" placeholder="Nombre" id="nombre"><br><br>
+            <span>Num celular:</span>
+            <input type="text" placeholder="movil" id = "movil">
+        </form>
+        <hr />
+        <div>
+            <button type="button" onclick="guardarDatos()"> Guardar</button>
+            <button type="button" onclick="recuperarDatos()"> Recuperar</button>
+            <button type="button" onclick="eliminarDatos()"> Eliminar</button>
+            <button type="button" onclick="eliminarTodo()"> Eliminar todos</button>
+        </div>
+        <hr>
+        <span class="titu">Nombre</span> <span class="titu">Celular</span><br>
+        <ul id="contactos"></ul>
+    </div>
+    <script type="text/javascript" src="js/js.js"></script>
+    </dody>
+</hmtl>
