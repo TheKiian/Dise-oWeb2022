@@ -26,10 +26,10 @@ function actualizarDatos(){
     if(localStorage.length===0){
         registro += '<li>Vacío</li>';
     } else{
-        for (var i=0; i<localStorage.length - 1; i++){
-            var key = localStorage.getItem(i);
+        for (var i=0; i<=localStorage.length - 1; i++){
+            var key = localStorage.key(i);
             registro += '<li>' + '<span class="nom">' + key + '</span>'
-            + '<span class = "nom">' + localStorage.getItem(key) + '</span>' + '<span class = "nom">' + '</li><br>'; 
+            + '<span class = "movil">' + localStorage.getItem(key) + '</span>' + '<span class = "nom">' + '</li><br>'; 
         }
     }
     document.getElementById('contactos').innerHTML = registro;
